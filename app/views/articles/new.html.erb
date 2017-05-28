@@ -1,0 +1,11 @@
+<div class="container" >
+  <div class="text-control">
+    <h1> Add a new article </h1>
+    <%= simple_form_for([@article]) do |f| %>
+      <%= f.input :headline, collection: @headlines, include_blank: false %>
+      <%= f.input :body %>
+      <%= f.input :photo, as: :attachinary %>
+      <%= f.button :submit, class: "btn btn-danger" %>
+    <% end %>
+  </div>
+</div>
