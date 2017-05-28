@@ -1,8 +1,19 @@
 <div class="bg-grey">
-    <div class="container">
-        <div class="row">
-            <p>Now is <%= Time.now %><p>
+  <div class="container u-width1020">
+        <% @articles.each do |article| %>
+    <div class="article u-paddingRight20 u-paddingLeft20">
+        <div class="article-section">
+            <% if article.photo? %>
+                <div class="article-img" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= cl_image_path article.photo.path %>);"></div>
+                <div class="article-headline article-section"><p><%= article.headline %></p>
+                    <a class="card-link" href="<%= article_path(article) %>" ></a>
+                </div>
+            <% else %>
+                <div class="article-headline"><p><%= article.headline %></p></div>
+                <a class="card-link" href="<%= article_path(article) %>" ></a>
+            <% end %>
         </div>
     </div>
+         <% end %>
+  </div>
 </div>
-

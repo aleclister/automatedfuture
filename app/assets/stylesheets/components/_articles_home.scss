@@ -1,0 +1,72 @@
+.article {
+    background: #fff;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    // top: 75px;
+    box-shadow: 0 1px 4px rgba(0,0,0,.04);
+    border: 1px solid rgba(0,0,0,.09);
+    border-radius: 3px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.article-img {
+    width: 945px;
+    height: 312px;
+}
+
+.article-headline {
+    font-size: 29px;
+    font-weight: bold;
+}
+
+.article_chrome {
+    background: #fff;
+    box-shadow: 0 1px 4px rgba(0,0,0,.04);
+    border: 1px solid rgba(0,0,0,.09);
+    border-radius: 3px;
+}
+
+.col {
+    position: relative;
+    min-height: 1px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.article-media {
+    width: 100%;
+}
+
+.article-body {
+  flex: 1 1 auto;
+  padding: 20px;
+}
+.article-body img {
+  width: 100%;
+}
+
+.article-section {
+  margin: 40px auto;
+}
+
+.article-section img {
+    width: 100%;
+}
+.article-section:first-child {
+  margin-top: 0;
+}
+.article-section:last-child {
+  margin-bottom: 0;
+}
+
+.card-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index:2;
+  background: black;
+  opacity: 0;
+}
