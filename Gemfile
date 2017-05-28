@@ -26,7 +26,9 @@ gem 'font-awesome-sass'
 gem 'simple_form'
 gem 'autoprefixer-rails'
 
+gem 'cloudinary', '1.1.7'
 gem "attachinary"
+gem 'jquery-fileupload-rails'
 gem 'devise'
 gem 'figaro'
 
