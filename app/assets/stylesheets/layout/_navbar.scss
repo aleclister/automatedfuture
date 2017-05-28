@@ -129,3 +129,16 @@
   border-left: 1px solid #E6E6E6;
   border-top: 1px solid #E6E6E6;
 }
+
+.navbar-logo {
+  color: #616668;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: Didot;
+  letter-spacing: 1px;
+  padding-left: 10px;
+}
+.navbar-logo:hover {
+  color: #da552f;
+  text-decoration: none;
+}
